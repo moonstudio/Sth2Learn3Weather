@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <TextView
+                        style="@style/TextViewStyle"
+                        android:layout_weight="3"
+                        android:gravity="left"
+                        android:paddingLeft="16dp"
+                        android:text="今天" />
+
+                    <ImageView
+                        android:id="@+id/iv_today_weather"
+                        style="@style/ViewStyle"
+                        android:layout_weight="4"
+                        android:src="@drawable/d00" />
+
+                    <TextView
+                        android:id="@+id/tv_today_temp_a"
+                        style="@style/TextViewStyle"
+                        android:layout_weight="4" />
+
+                    <TextView
+                        android:id="@+id/tv_today_temp_b"
+                        style="@style/TextViewStyle"
+                        android:layout_weight="4" />
+                </LinearLayout>
+
+</LinearLayout>
