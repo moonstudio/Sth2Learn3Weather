@@ -90,7 +90,6 @@ public class WeatherActivty extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activty_weather);
@@ -120,7 +119,6 @@ public class WeatherActivty extends Activity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        // TODO Auto-generated method stub
         if (requestCode == 1 && resultCode == 1) {
             city = data.getStringExtra("city").toString();
             tv_city.setText(city);
@@ -348,10 +346,8 @@ public class WeatherActivty extends Activity {
                 Toast.makeText(getApplicationContext(), "HOURS_ERROR", Toast.LENGTH_SHORT).show();
             }
         } catch (JSONException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (ParseException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         return list;

@@ -53,7 +53,6 @@ public class CityActivty extends Activity {
 
             @Override
             public void jsonLoaded(JSONObject json) {
-                // TODO Auto-generated method stub
                 try {
                     int code = json.getInt("resultcode");
                     int error_code = json.getInt("error_code");
@@ -78,7 +77,6 @@ public class CityActivty extends Activity {
 
                             @Override
                             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-                                // TODO Auto-generated method stub
                                 Intent intent = new Intent();
                                 intent.putExtra("city", list.get(arg2));
                                 setResult(1, intent);
@@ -88,7 +86,6 @@ public class CityActivty extends Activity {
 
                     }
                 } catch (JSONException e) {
-                    // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
             }
